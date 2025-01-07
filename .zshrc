@@ -114,6 +114,7 @@ alias editreadme="nvim $(pwd)/README.md"
 alias .="pwd"
 alias w="whoami"
 alias c="clear"
+alias systemstat="systemctl --failed"
 
 # pnpm
 export PNPM_HOME="/home/austin/.local/share/pnpm"
