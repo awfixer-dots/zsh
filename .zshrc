@@ -98,6 +98,11 @@ alias yupdate="yay -Syyu"
 alias search="pacseek"
 alias update="sudo pacman -Syyu"
 alias install="paru -Syu"
+
+# File Development and editing
+alias envedit="nvim $(pwd)/.env"
+alias editreadme="nvim $(pwd)/README.md"
+
 # pnpm
 export PNPM_HOME="/home/austin/.local/share/pnpm"
 case ":$PATH:" in
