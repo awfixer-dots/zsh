@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -79,14 +79,14 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='nvim'
+ else
+   export EDITOR='vim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -121,8 +121,9 @@ rehash_precmd() {
 add-zsh-hook -Uz precmd rehash_precmd
 
 # omz
-alias zshconfig="geany ~/.zshrc"
-alias ohmyzsh="thunar ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias sourcez="source ~/.zshrc"
 
 # ls
 alias l='ls -lh'
@@ -133,12 +134,19 @@ alias lr='ls -R'
 alias lg='ls -l --group-directories-first'
 
 # git
-alias gcl='git clone --depth 1'
+alias gcl='git clone'
 alias gi='git init'
-alias ga='git add'
-alias gc='git commit -m'
-alias gp='git push origin master'
+alias ga='git add .'
+alias gc='git commit -m "zsh did it for me"'
+alias gp='git push'
+alias gstat="git status"
 
+# update (archlinux)
+alias pupdate="paru -Syyu"
+alias yupdate="yay -Syyu"
+alias search="pacseek"
+alias update="sudo pacman -Syyu"
+alias install="paru -Syu"
 # pnpm
 export PNPM_HOME="/home/austin/.local/share/pnpm"
 case ":$PATH:" in
