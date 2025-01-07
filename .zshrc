@@ -91,6 +91,13 @@ alias ga='git add .'
 alias gc='git commit -m "zsh did it for me"'
 alias gp='git push'
 alias gstat="git status"
+alias gstash="git stash"
+
+# gh
+alias ghrc="gh repo clone"
+alias ghcreate="gh repo create"
+alias ghrs="gh repo sync"
+alias gha="gh auth status"
 
 # package management (archlinux)
 alias pupdate="paru -Syyu"
@@ -99,7 +106,7 @@ alias search="pacseek"
 alias update="sudo pacman -Syyu"
 alias install="paru -Syu"
 
-# File Development and editing
+# File Development and editing (testin)
 alias envedit="nvim $(pwd)/.env"
 alias editreadme="nvim $(pwd)/README.md"
 
