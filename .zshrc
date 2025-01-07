@@ -103,6 +103,11 @@ alias install="paru -Syu"
 alias envedit="nvim $(pwd)/.env"
 alias editreadme="nvim $(pwd)/README.md"
 
+# Terminal Commands
+alias .="pwd"
+alias w="whoami"
+alias c="clear"
+
 # pnpm
 export PNPM_HOME="/home/austin/.local/share/pnpm"
 case ":$PATH:" in
