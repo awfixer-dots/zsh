@@ -31,11 +31,11 @@ COMPLETION_WAITING_DOTS="true"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=/home/austin/.oh-my-zsh/custom/
 
-plugins=(git npm zoxide 1password archlinux brew docker docker-compose git-extras sudo thefuck zsh-interactive-cd)
+plugins=(aliases colored-man-pages command-not-found cp github gitignore golang systemd pip python nvm tugboat tmux git npm zoxide 1password archlinux brew docker docker-compose git-extras sudo thefuck zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
 
