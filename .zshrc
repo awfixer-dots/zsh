@@ -115,6 +115,7 @@ alias .="pwd"
 alias w="whoami"
 alias c="clear"
 alias systemstat="systemctl --failed"
+alias cp='cp -r'
 
 #emacs
 alias emacs='emacs -nw'
