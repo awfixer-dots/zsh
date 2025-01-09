@@ -33,7 +33,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 HIST_STAMPS="mm/dd/yyyy"
 
-ZSH_CUSTOM=/home/austin/.oh-my-zsh/custom/
+ZSH_CUSTOM=~/.oh-my-zsh/custom/
 
 plugins=(aliases colored-man-pages command-not-found cp github gitignore golang systemd pip python nvm tugboat tmux git npm zoxide 1password archlinux brew docker docker-compose git-extras sudo thefuck zsh-interactive-cd)
 
@@ -115,6 +115,12 @@ alias .="pwd"
 alias w="whoami"
 alias c="clear"
 alias systemstat="systemctl --failed"
+
+#emacs
+alias emacs='emacs -nw'
+
+#zoxide
+alias cd="z"
 
 # pnpm
 export PNPM_HOME="/home/austin/.local/share/pnpm"
